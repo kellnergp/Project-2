@@ -24,3 +24,11 @@ CREATE TABLE coimbra_control_age_means (
 	"MCP.1" DECIMAL(7,3) NOT NULL
 );
 
+create table BiRads(
+	Age INT NOT NULL, 
+	BI_RADS float NOT NULL, 
+	Shape float NOT NULL, 
+	Margin float NOT NULL, 
+	Density float NOT NULL, 
+	Severity float NOT NULL 	
+);
