@@ -48,4 +48,21 @@ CREATE TABLE IF NOT EXISTS public."Breast_cancer"
     "Class" character varying COLLATE pg_catalog."default"
 );
 
+CREATE TABLE NKI_Data (
+	Patient INT PRIMARY KEY,
+	ID INT NOT NULL,
+	Age INT NOT NULL,
+	eventdeath INT NOT NULL,
+	survival INT NOT NULL,
+	timerecurrence DECIMAL(5,3) NOT NULL,
+	chemo INT NOT NULL,
+	hormonal INT NOT NULL,
+	amputation INT NOT NULL,
+	histtype INT NOT NULL,
+	diam INT NOT NULL,
+	posnodes INT NOT NULL,
+	grade INT NOT NULL,
+	angioinv INT NOT NULL,
+	lymphinfil INT NOT NULL
+);
 
