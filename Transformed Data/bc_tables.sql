@@ -46,12 +46,6 @@ CREATE TABLE IF NOT EXISTS public."Breast_cancer"
     "breast-quad" character varying COLLATE pg_catalog."default",
     irradiat character varying COLLATE pg_catalog."default",
     "Class" character varying COLLATE pg_catalog."default"
-)
-WITH (
-    OIDS = FALSE
-)
-TABLESPACE pg_default;
+);
 
-ALTER TABLE public."Breast_cancer"
-    OWNER to postgres;
 
