@@ -24,3 +24,23 @@ CREATE TABLE coimbra_control_age_means (
 	"MCP.1" DECIMAL(7,3) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS public."Breast_cancer"
+(
+    age character varying COLLATE pg_catalog."default",
+    menopause character varying COLLATE pg_catalog."default",
+    "tumor-size" character varying COLLATE pg_catalog."default",
+    "inv-nodes" character varying COLLATE pg_catalog."default",
+    "node-caps" character varying COLLATE pg_catalog."default",
+    "deg-malig" character varying COLLATE pg_catalog."default",
+    breast character varying COLLATE pg_catalog."default",
+    "breast-quad" character varying COLLATE pg_catalog."default",
+    irradiat character varying COLLATE pg_catalog."default",
+    "Class" character varying COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public."Breast_cancer"
+    OWNER to postgres;
