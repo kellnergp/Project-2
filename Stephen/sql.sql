@@ -2,13 +2,15 @@
 Drop table BiRads;
 
 create table BiRads(
-	LineID int primary key, 
-	BI_RADS int, 
-	Age int, 
-	Shape int, 
-	Margin int, 
-	Density int, 
-	Severity int 	
+	Age float, 
+	BI_RADS float, 
+	Shape float, 
+	Margin float, 
+	Density float, 
+	Severity float 	
 );
+
+
+
 
 select*from birads;
