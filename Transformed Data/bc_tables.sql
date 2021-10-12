@@ -24,6 +24,16 @@ CREATE TABLE coimbra_control_age_means (
 	"MCP.1" DECIMAL(7,3) NOT NULL
 );
 
+
+create table BiRads(
+	Age INT NOT NULL, 
+	BI_RADS float NOT NULL, 
+	Shape float NOT NULL, 
+	Margin float NOT NULL, 
+	Density float NOT NULL, 
+	Severity float NOT NULL 	
+);
+
 CREATE TABLE IF NOT EXISTS public."Breast_cancer"
 (
     age character varying COLLATE pg_catalog."default",
@@ -44,3 +54,4 @@ TABLESPACE pg_default;
 
 ALTER TABLE public."Breast_cancer"
     OWNER to postgres;
+
